@@ -60,6 +60,28 @@ $(document).ready(function() {
 
 	});
 
+	$(".meditations").click(function() {
+		$(".barach").fadeIn(800);
+		$(".black").fadeIn(800);
+		$(".button").fadeIn(800);
+		$(".button").css("display","flex");
+		$(".button").css("justify-content","center");
+		$(".button").css("align-items","center");
+
+	});
+
+	$(".cue").click(function() {
+		$(".boas").fadeIn(800);
+		$(".black").fadeIn(800);
+		$(".button").fadeIn(800);
+		$(".button").css("display","flex");
+		$(".button").css("justify-content","center");
+		$(".button").css("align-items","center");
+
+	});
+
+
+
 	$(".button").click(function() {
 		location.reload();
 	});
