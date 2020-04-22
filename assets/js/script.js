@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-
 //films
 	$(".altar").click(function() {
 		$(".papias").fadeIn(800);
@@ -15,6 +14,9 @@ $(document).ready(function() {
 		$(".lister").fadeIn(800);
 		$(".black").fadeIn(800);
 		$(".button").fadeIn(800);
+		$(".button").css("display","flex");
+		$(".button").css("justify-content","center");
+		$(".button").css("align-items","center");
 
 	});
 
@@ -22,6 +24,9 @@ $(document).ready(function() {
 		$(".daniel").fadeIn(800);
 		$(".black").fadeIn(800);
 		$(".button").fadeIn(800);
+		$(".button").css("display","flex");
+		$(".button").css("justify-content","center");
+		$(".button").css("align-items","center");
 
 	});
 
@@ -29,6 +34,9 @@ $(document).ready(function() {
 		$(".grove").fadeIn(800);
 		$(".black").fadeIn(800);
 		$(".button").fadeIn(800);
+		$(".button").css("display","flex");
+		$(".button").css("justify-content","center");
+		$(".button").css("align-items","center");
 
 	});
 
@@ -36,6 +44,9 @@ $(document).ready(function() {
 		$(".moye").fadeIn(800);
 		$(".black").fadeIn(800);
 		$(".button").fadeIn(800);
+		$(".button").css("display","flex");
+		$(".button").css("justify-content","center");
+		$(".button").css("align-items","center");
 
 	});
 
@@ -43,6 +54,9 @@ $(document).ready(function() {
 		$(".quirus").fadeIn(800);
 		$(".black").fadeIn(800);
 		$(".button").fadeIn(800);
+		$(".button").css("display","flex");
+		$(".button").css("justify-content","center");
+		$(".button").css("align-items","center");
 
 	});
 

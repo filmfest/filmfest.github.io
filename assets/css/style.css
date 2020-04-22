@@ -26,6 +26,11 @@ html, body{
 
 }
 
+
+.inertia a{
+	color: white;
+}
+
 .artist{
 	font-size: 12pt;
 	position: absolute;
