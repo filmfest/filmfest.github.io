@@ -4,6 +4,28 @@ html, body{
 	cursor: crosshair;
 }
 
+.button{
+	width: 230px;
+	height: 230px;
+	border-radius: 50%;
+	background: yellow;
+	color: yellow;
+	position: fixed;
+	left: 9%;
+	top: 30%;
+	font-family: 'Roboto Mono', monospace;
+	z-index: 6;
+	display: none;
+}
+
+.button:hover{
+	cursor: pointer;
+	background: none;
+	border-style: dashed;
+	border-color: yellow;
+
+}
+
 .artist{
 	font-size: 12pt;
 	position: absolute;
@@ -17,6 +39,10 @@ html, body{
 	position: absolute;
 	top: 20%;
 	left: 12%;
+}
+
+.special{
+	font-size: 17pt;
 }
 
 .logo{
@@ -58,11 +84,16 @@ html, body{
 
 .bio{
 	color: white;
+	font-family: 'Lora', serif;
 	font-size: 30pt;
+	position: absolute;
+	width: 1000px;
+	left: 20%;
+	top: 80%;
+	z-index: 5;
 	display: none;
+
 }
-
-
 
 .black{
 	position:fixed;

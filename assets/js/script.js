@@ -1,35 +1,54 @@
 $(document).ready(function() {
 
+
 //films
 	$(".altar").click(function() {
 		$(".papias").fadeIn(800);
 		$(".black").fadeIn(800);
-	})
+		$(".button").fadeIn(800);
+		$(".button").css("display","flex");
+		$(".button").css("justify-content","center");
+		$(".button").css("align-items","center");
+	});
 
 	$(".i").click(function() {
 		$(".lister").fadeIn(800);
 		$(".black").fadeIn(800);
-	})
+		$(".button").fadeIn(800);
+
+	});
 
 	$(".bonhomie").click(function() {
 		$(".daniel").fadeIn(800);
 		$(".black").fadeIn(800);
-	})
+		$(".button").fadeIn(800);
+
+	});
 
 	$(".tectonic").click(function() {
 		$(".grove").fadeIn(800);
 		$(".black").fadeIn(800);
-	})
+		$(".button").fadeIn(800);
+
+	});
 
 	$(".fruit").click(function() {
 		$(".moye").fadeIn(800);
 		$(".black").fadeIn(800);
-	})
+		$(".button").fadeIn(800);
+
+	});
 
 	$(".koyo").click(function() {
 		$(".quirus").fadeIn(800);
 		$(".black").fadeIn(800);
-	})
+		$(".button").fadeIn(800);
+
+	});
+
+	$(".button").click(function() {
+		location.reload();
+	});
 
 //hover
 	$(".table").hover(function() {
@@ -44,7 +63,7 @@ $(document).ready(function() {
 	}, function() {
 		$(".1").css("opacity","0");
 		$(".decal").hide();
-	})
+	});
 
 	$(".altar").hover(function() {
 		$(".2").css("opacity","1");
@@ -58,7 +77,7 @@ $(document).ready(function() {
 	}, function() {
 		$(".2").css("opacity","0");
 		$(".decal").hide();
-	})
+	});
 
 	$(".fruit").hover(function() {
 		$(".3").css("opacity","1");
@@ -71,7 +90,7 @@ $(document).ready(function() {
 	}, function() {
 		$(".3").css("opacity","0");
 		$(".decal").hide();
-	})
+	});
 
 	$(".tectonic").hover(function() {
 		$(".4").css("opacity","1");
@@ -84,7 +103,7 @@ $(document).ready(function() {
 	}, function() {
 		$(".4").css("opacity","0");
 		$(".decal").hide();
-	})	
+	});	
 
 	$(".meditations").hover(function() {
 		$(".5").css("opacity","1");
@@ -97,7 +116,7 @@ $(document).ready(function() {
 	}, function() {
 		$(".5").css("opacity","0");
 		$(".decal").hide();
-	})	
+	});	
 
 	$(".koyo").hover(function() {
 		$(".6").css("opacity","1");
@@ -110,7 +129,7 @@ $(document).ready(function() {
 	}, function() {
 		$(".6").css("opacity","0");
 		$(".decal").hide();
-	})	
+	});	
 
 	$(".cue").hover(function() {
 		$(".7").css("opacity","1");
@@ -123,7 +142,7 @@ $(document).ready(function() {
 	}, function() {
 		$(".7").css("opacity","0");
 		$(".decal").hide();
-	})	
+	});	
 
 	$(".bonhomie").hover(function() {
 		$(".8").css("opacity","1");
@@ -136,7 +155,7 @@ $(document).ready(function() {
 	}, function() {
 		$(".8").css("opacity","0");
 		$(".decal").hide();
-	})	
+	});	
 
 	$(".bleed").hover(function() {
 		$(".9").css("opacity","1");
@@ -149,7 +168,7 @@ $(document).ready(function() {
 	}, function() {
 		$(".9").css("opacity","0");
 		$(".decal").hide();
-	})	
+	});	
 
 	$(".i").hover(function() {
 		$(".10").css("opacity","1");
@@ -163,7 +182,7 @@ $(document).ready(function() {
 	}, function() {
 		$(".10").css("opacity","0");
 		$(".decal").hide();
-	})
+	});
 
 	$(".discovering").hover(function() {
 		$(".11").css("opacity","1");
@@ -176,6 +195,6 @@ $(document).ready(function() {
 	}, function() {
 		$(".11").css("opacity","0");
 		$(".decal").hide();
-	})		
+	});	
 
 });
