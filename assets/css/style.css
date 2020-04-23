@@ -5,13 +5,13 @@ html, body{
 }
 
 .button{
-	width: 230px;
-	height: 230px;
+	width: 180px;
+	height: 180px;
 	border-radius: 50%;
 	background: yellow;
 	color: yellow;
 	position: fixed;
-	left: 9%;
+	left: 5%;
 	top: 30%;
 	font-family: 'Roboto Mono', monospace;
 	z-index: 6;
@@ -195,6 +195,21 @@ a {
 	transform: rotate(7deg);
 
 }
+
+.secret {
+	display: relative;
+	position: fixed;
+	height: 23px;
+	width: 23px;
+	top: 91%;
+	left: 8%;
+	z-index:10;
+}
+
+.secret:hover {
+	cursor: pointer;
+}
+
 
 .mov {
 	position: absolute;

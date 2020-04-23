@@ -90,6 +90,46 @@ $(document).ready(function() {
 
 	});
 
+	$(".table").click(function() {
+		$(".cheung").fadeIn(800);
+		$(".black").fadeIn(800);
+		$(".button").fadeIn(800);
+		$(".button").css("display","flex");
+		$(".button").css("justify-content","center");
+		$(".button").css("align-items","center");
+
+	});
+
+	$(".bleed").click(function() {
+		$(".chew").fadeIn(800);
+		$(".black").fadeIn(800);
+		$(".button").fadeIn(800);
+		$(".button").css("display","flex");
+		$(".button").css("justify-content","center");
+		$(".button").css("align-items","center");
+
+	});
+
+	$(".discovering").click(function() {
+		$(".turan").fadeIn(800);
+		$(".black").fadeIn(800);
+		$(".button").fadeIn(800);
+		$(".button").css("display","flex");
+		$(".button").css("justify-content","center");
+		$(".button").css("align-items","center");
+
+	});
+
+	$(".secret").click(function() {
+		$(".cameron").show();
+		$(".black").fadeIn(800);
+		$(".button").fadeIn(800);
+		$(".button").css("display","flex");
+		$(".button").css("justify-content","center");
+		$(".button").css("align-items","center");
+
+	});
+
 	$(".button").click(function() {
 		location.reload();
 	});
