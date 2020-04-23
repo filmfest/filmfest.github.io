@@ -236,4 +236,17 @@ a {
 	height: 100%;
 }
 
+@keyframes flipper {
+	50% {transform: rotateX(90deg);}
+
+}
+
+
+.toe {
+	animation-name: flipper;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+
 
