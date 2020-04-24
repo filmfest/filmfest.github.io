@@ -2,6 +2,8 @@ html, body{
 	padding:0px;
 	margin: 0px;
 	cursor: crosshair;
+	height: 100%;
+	width: 100%;
 }
 
 .button{
@@ -46,7 +48,9 @@ html, body{
 
 .logo{
 	position: fixed;
-	height: 52%;
+	max-width: 376px;
+	width: 100%;
+	height: auto;
 	top: 8%;
 	left: 6%;
 	z-index: 1;
@@ -63,7 +67,7 @@ html, body{
 .banner{
 	position: fixed;
 	width: 830px;
-	top: 70%;
+	bottom: 0%;
 }
 
 .one{
@@ -71,7 +75,7 @@ html, body{
 }
 
 .two{
-	left: 54%;
+	right: 0%;
 
 }
 .info{
@@ -117,11 +121,11 @@ a {
 	margin-bottom: 200px;
 	display: grid;
 	grid-template-columns: 40%60%;
+	height: 100vh; 
 }
 
 .left{
-	height: 1000px;
-	width: 800px;
+	height: 100%;
 	font-family: 'Roboto Mono', monospace;
 	font-size: 10px;
 }
@@ -201,7 +205,7 @@ a {
 	position: fixed;
 	height: 23px;
 	width: 23px;
-	top: 91%;
+	bottom: 8%;
 	left: 8%;
 	z-index:10;
 }
