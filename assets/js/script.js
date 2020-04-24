@@ -40,15 +40,15 @@ $(document).ready(function() {
 
 	});
 
-	$(".fruit").click(function() {
-		$(".moye").fadeIn(800);
-		$(".black").fadeIn(800);
-		$(".button").fadeIn(800);
-		$(".button").css("display","flex");
-		$(".button").css("justify-content","center");
-		$(".button").css("align-items","center");
+//	$(".fruit").click(function() {
+//		$(".moye").fadeIn(800);
+//		$(".black").fadeIn(800);
+//		$(".button").fadeIn(800);
+//		$(".button").css("display","flex");
+//		$(".button").css("justify-content","center");
+//		$(".button").css("align-items","center");
 
-	});
+//	});
 
 	$(".koyo").click(function() {
 		$(".quirus").fadeIn(800);
@@ -163,18 +163,33 @@ $(document).ready(function() {
 		$(".decal").hide();
 	});
 
-	$(".fruit").hover(function() {
-		$(".3").css("opacity","1");
+	$(".discovering").hover(function() {
+		$(".11").css("opacity","1");
 		$(".bigdot").show();
 		$(".bigdot").css("top",970);
 		$(".bigdot").css("left",970);
 		$(".exclamation").show();
 		$(".exclamation").css("left",1100);
 		$(".exclamation").css("top",1260);
+
 	}, function() {
-		$(".3").css("opacity","0");
+		$(".11").css("opacity","0");
 		$(".decal").hide();
+
 	});
+
+//	$(".fruit").hover(function() {
+//		$(".3").css("opacity","1");
+//		$(".bigdot").show();
+//		$(".bigdot").css("top",970);
+//		$(".bigdot").css("left",970);
+//		$(".exclamation").show();
+//		$(".exclamation").css("left",1100);
+//		$(".exclamation").css("top",1260);
+//	}, function() {
+//		$(".3").css("opacity","0");
+//		$(".decal").hide();
+//	});
 
 	$(".tectonic").hover(function() {
 		$(".4").css("opacity","1");
@@ -268,18 +283,19 @@ $(document).ready(function() {
 		$(".decal").hide();
 	});
 
-	$(".discovering").hover(function() {
-		$(".11").css("opacity","1");
-		$(".bluehearts").show();
-		$(".bluehearts").css("top",3680);
-		$(".bluehearts").css("left",1110);
-		$(".bigdot").show();
-		$(".bigdot").css("top",3490);
-		$(".bigdot").css("left",610);
-	}, function() {
-		$(".11").css("opacity","0");
-		$(".decal").hide();
-	});	
+//old discovering
+//	$(".discovering").hover(function() {
+//		$(".11").css("opacity","1");
+//		$(".bluehearts").show();
+//		$(".bluehearts").css("top",3680);
+//		$(".bluehearts").css("left",1110);
+//		$(".bigdot").show();
+//		$(".bigdot").css("top",3490);
+//		$(".bigdot").css("left",610);
+//	}, function() {
+//		$(".11").css("opacity","0");
+//		$(".decal").hide();
+//	});	
 
 		$(".inertia").hover(function() {
 		$(".12").css("opacity","1");
