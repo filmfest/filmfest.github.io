@@ -108,28 +108,27 @@ a {
 	height: 100vh; 
 }
 
+.left{
+	height: 100%;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 10px;
+}
+
 .links{
 	text-align: center;
 	position: fixed;
-	top: 61%;
-	left: 8%;
+	top: 59%;
+	left: 6.45%;
 	line-height: 180%;	
 }
 
 .logo{
 	position: fixed;
-	max-width: 330px;
 	top: 8%;
 	left: 3%;
-	width: 100%;
-	height: auto;
+	height: 48%;
+	width: auto;
 	z-index: 1;
-}
-
-.left{
-	height: 100%;
-	font-family: 'Roboto Mono', monospace;
-	font-size: 10px;
 }
 
 .right{
