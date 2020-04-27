@@ -2,6 +2,7 @@ $(document).ready(function() {
 
 //films
 	$(".altar").click(function() {
+		$(".theater").show()
 		$(".papias").fadeIn(800);
 		$(".black").fadeIn(800);
 		$(".button").fadeIn(800);
@@ -11,6 +12,7 @@ $(document).ready(function() {
 	});
 
 	$(".i").click(function() {
+		$(".theater").show()
 		$(".lister").fadeIn(800);
 		$(".black").fadeIn(800);
 		$(".button").fadeIn(800);
@@ -22,6 +24,7 @@ $(document).ready(function() {
 	});
 
 	$(".bonhomie").click(function() {
+		$(".theater").show()
 		$(".daniel").fadeIn(800);
 		$(".black").fadeIn(800);
 		$(".button").fadeIn(800);
@@ -32,6 +35,7 @@ $(document).ready(function() {
 	});
 
 	$(".tectonic").click(function() {
+		$(".theater").show()
 		$(".grove").fadeIn(800);
 		$(".black").fadeIn(800);
 		$(".button").fadeIn(800);
@@ -52,6 +56,7 @@ $(document).ready(function() {
 //	});
 
 	$(".koyo").click(function() {
+		$(".theater").show()
 		$(".quirus").fadeIn(800);
 		$(".black").fadeIn(800);
 		$(".button").fadeIn(800);
@@ -62,6 +67,7 @@ $(document).ready(function() {
 	});
 
 	$(".meditations").click(function() {
+		$(".theater").show()
 		$(".barach").fadeIn(800);
 		$(".black").fadeIn(800);
 		$(".button").fadeIn(800);
@@ -72,6 +78,7 @@ $(document).ready(function() {
 	});
 
 	$(".cue").click(function() {
+		$(".theater").show()
 		$(".boas").fadeIn(800);
 		$(".black").fadeIn(800);
 		$(".button").fadeIn(800);
@@ -82,6 +89,7 @@ $(document).ready(function() {
 	});
 
 	$(".inertia").click(function() {
+		$(".theater").show()
 		$(".minocha").fadeIn(800);
 		$(".black").fadeIn(800);
 		$(".button").fadeIn(800);
@@ -92,6 +100,7 @@ $(document).ready(function() {
 	});
 
 	$(".table").click(function() {
+		$(".theater").show()
 		$(".cheung").fadeIn(800);
 		$(".black").fadeIn(800);
 		$(".button").fadeIn(800);
@@ -102,6 +111,7 @@ $(document).ready(function() {
 	});
 
 	$(".bleed").click(function() {
+		$(".theater").show()
 		$(".chew").fadeIn(800);
 		$(".black").fadeIn(800);
 		$(".button").fadeIn(800);
@@ -112,6 +122,7 @@ $(document).ready(function() {
 	});
 
 	$(".discovering").click(function() {
+		$(".theater").show()
 		$(".turan").fadeIn(800);
 		$(".black").fadeIn(800);
 		$(".button").fadeIn(800);
@@ -122,6 +133,7 @@ $(document).ready(function() {
 	});
 
 	$(".secret").click(function() {
+		$(".theater").show()
 		$(".cameron").show();
 		$(".black").fadeIn(800);
 		$(".button").fadeIn(800);

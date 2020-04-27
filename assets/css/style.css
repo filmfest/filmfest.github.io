@@ -6,6 +6,41 @@ html, body{
 	width: 100%;
 }
 
+.theater{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-row-gap: 20px;
+	grid-template-rows:40%60%;
+	padding:0;
+	position: relative;
+    top:15%;
+    left:20%;
+    width: 1000px;
+    z-index: 5;
+    display: none;
+}
+
+.bio{
+	color: white;
+	font-family: 'Lora', serif;
+	font-size: 30pt;
+/*	position: absolute;
+	width: 1000px;
+	left: 20%;
+	top: 90%;
+*/
+	z-index: 9;
+	display: none;
+}
+
+.mov {
+/*	position: absolute;
+	top: 18%;
+	left: 20%;*/
+	z-index: 8;
+	display: none;
+}
+
 .button{
 	width: 180px;
 	height: 180px;
@@ -13,7 +48,7 @@ html, body{
 	background: yellow;
 	color: yellow;
 	position: fixed;
-	left: 3%;
+	left: 5%;
 	top: 30%;
 	font-family: 'Roboto Mono', monospace;
 	z-index: 6;
@@ -73,13 +108,13 @@ html, body{
 	color: white;
 	font-family: 'Lora', serif;
 	font-size: 30pt;
-	position: absolute;
+/*	position: absolute;
 	width: 1000px;
 	left: 20%;
 	top: 90%;
+*/
 	z-index: 9;
 	display: none;
-
 }
 
 .black{
@@ -218,9 +253,9 @@ a {
 
 
 .mov {
-	position: absolute;
+/*	position: absolute;
 	top: 18%;
-	left: 20%;
+	left: 20%;*/
 	z-index: 8;
 	display: none;
 }
