@@ -1,7 +1,18 @@
+var theaterContent = {};
+
 $(document).ready(function() {
   $('#main').fadeIn(1500);
   // randomEffect();
-})
+  $.getJSON("js/theater-content.json", function(content) {
+    console.log(content);
+    saveContent(content);
+  });
+});
+
+function saveContent(content) {
+  theaterContent = content;
+  console.log(theaterContent);
+}
 
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
@@ -34,38 +45,37 @@ $(".video-box").hover(
 );
 
 $(".video-box").click(function() {
-  var id = this.id;
-  openTheater(id);
+  loadContent(this.id);
+  openTheater();
 });
 
-var lastOpened = "";
-
 $(".outer").click(function() {
-  changeVisibility(lastOpened);
-  lastOpened = "";
   closeTheater();
 })
 
-function openTheater(id) {
+function loadContent(contentID) {
+  console.log(contentID);
+  var filmContent = theaterContent[contentID];
+  console.log(filmContent);
+  $("#theater-content.video-embed").attr('src', filmContent["source"]);
+  $(".theater.title").text(filmContent["title"]);
+  $(".theater.creator").text(filmContent["creator"]);
+  $(".theater.description").text(filmContent["description"]);
+  $(".theater.bio").text(filmContent["bio"]);
+}
+
+function openTheater() {
   document.getElementById("theater").style.display = "block";
-  changeVisibility(id);
-  lastOpened = id;
-//  $("#" + id).css('display', 'block');
 }
 
 function closeTheater() {
   document.getElementById("theater").style.display = "none";
 }
 
-function changeVisibility(id) {
-  $("#" + id).toggleClass('invisible');
-  $("#" + id).toggleClass('visible');
-}
 
 function parallax() {
 	var wScroll = $(window).scrollTop();
   var topGallery = $('#video-gallery').offset().top;
-  console.log(topGallery);
 	$('.down-indicator').css('opacity', (100 - (wScroll)) + '%');
 	$('.parallax-bg').css('background-position', 'center ' + (5 + (wScroll * 0.05)) + 'em');
   if (wScroll >= topGallery) {
