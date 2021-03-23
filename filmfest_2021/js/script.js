@@ -3,10 +3,12 @@ var theaterContent = {};
 $(document).ready(function() {
   $('#main').fadeIn(1500);
   // randomEffect();
-  $.getJSON("js/theater-content.json", function(content) {
+  console.log(1);
+  $.getJSON("theater-content.json", function(content) {
     console.log(content);
     saveContent(content);
   });
+  console.log(2);
 });
 
 function saveContent(content) {
