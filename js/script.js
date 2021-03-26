@@ -58,7 +58,10 @@ $(".outer").click(function() {
 })
 
 function resizeHeader() {
-  $(".header").css('height', $(window).height() + 'px');
+  var windowHeight = $(window).height() + 'px';
+
+  $(".header").css('height', windowHeight);
+  $("#video-gallery").css('margin-top', windowHeight);
 }
 
 function loadContent(contentID) {
@@ -82,6 +85,7 @@ function closeTheater() {
 function parallax() {
 	var wScroll = $(window).scrollTop();
   var topGallery = $('#video-gallery').offset().top;
+  console.log(wScroll + ", " + topGallery);
 	$('.down-indicator').css('opacity', (100 - (wScroll)) + '%');
 	$('.parallax-bg').css('background-position', 'center ' + (5 + (wScroll * 0.063)) + 'em');
   if (wScroll >= topGallery) {

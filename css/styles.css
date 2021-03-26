@@ -60,7 +60,7 @@ body {
   background-repeat: repeat;
   background-blend-mode: multiply;
   display: none;
-  height: 8500px;
+  height: auto;
 }
 
 .bg-logo {
@@ -69,9 +69,6 @@ body {
 	background-position: center 5em;
 	background-repeat: no-repeat;
 	color: #FFF;
-}
-
-.header {
 }
 
 .text-head {
@@ -144,7 +141,7 @@ body {
   right: 0;
   bottom: 0;
   background-color: rgba(0,0,0,0.8);
-  z-index: 3;
+  z-index: 10;
 }
 
 #theater .row {
@@ -254,10 +251,12 @@ label {
 	display: flex;
 	flex-wrap: wrap;
 	background-color: #f0d8dd;
-	margin: 0em 2em 3em 1em;
   padding-bottom: 10em;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 1000px;
   border-top: 0.1em solid #0A4EF2/*black*/;
-  z-index: 2;
+  z-index: 9;
 }
 
 .gallery-title {
