@@ -58,10 +58,10 @@ $(".outer").click(function() {
 })
 
 function resizeHeader() {
-  var windowHeight = $(window).height() + 'px';
-
-  $(".header").css('height', windowHeight);
-  $("#video-gallery").css('margin-top', windowHeight);
+  var windowHeight = $(window).height();
+  $(".header").css('height', windowHeight + 'px');
+  $("#video-gallery").css('margin-top', windowHeight + 'px');
+  $("#gallery-wrapper").css('padding-top', (windowHeight * 0.67) + 'px');
 }
 
 function loadContent(contentID) {

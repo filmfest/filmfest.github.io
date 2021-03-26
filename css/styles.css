@@ -1,3 +1,5 @@
+/* #f0d8dd */
+
 @-webkit-keyframes bobble {
   0% {
     transform: translateY(0);
@@ -54,7 +56,7 @@ body {
 }
 
 #main {
-	background-color: #f0d8dd;
+	background-color: #f0c9d1;
 	/* background-image: url(../img/lightpaperfibers.png); */
 	background-position: center;
   background-repeat: repeat;
@@ -63,21 +65,14 @@ body {
   height: auto;
 }
 
-.bg-logo {
-	/* background-image: url(../img/logo2.png); */
-	background-size: 50%;
-	background-position: center 5em;
-	background-repeat: no-repeat;
-	color: #FFF;
-}
-
 .text-head {
   box-shadow: -2px 0px 0 #0A4EF2;
   /* border-left: 0.1em solid #0A4EF2; */
   height: 500px;
-  padding-top: 75px;
+  margin-top: 25px;
+  padding-top: 50px;
   padding-left: 50px;
-  padding-right: 150px;
+  padding-right: 300px;
 }
 
 .text-head .event-title {
@@ -172,7 +167,7 @@ label {
   font-size: 1em;
   line-height: 4em;
   text-transform: uppercase;
-  color: #f0d8dd;
+  color: #f0c9d1;
   transition: all .3s ease-in;
   opacity: 0;
   cursor: pointer;
@@ -183,7 +178,7 @@ label {
   content: '';
   height: 1px;
   width: inherit;
-  background: #f0d8dd;
+  background: #f0c9d1;
   left: 0;
   transition: all .3s ease-in;
 }
@@ -221,7 +216,7 @@ label {
 }
 
 .theater {
-  color: #f0d8dd;
+  color: #f0c9d1;
 }
 
 .theater.title {
@@ -239,10 +234,14 @@ label {
   font-size: 1.5em;
 }
 
+.video-bg {
+}
+
 #video-gallery {
   position: relative;
   width: 100%;
   transition: none;
+  background-color: #f0c9d1;
   background-image: url(../img/video-gallery-blue.png);
   background-size: 45%;
 	background-position: center 5em;
@@ -250,7 +249,6 @@ label {
 
 	display: flex;
 	flex-wrap: wrap;
-	background-color: #f0d8dd;
   padding-bottom: 10em;
   margin-left: 0 !important;
   margin-right: 0 !important;
@@ -272,7 +270,7 @@ label {
 }
 
 #gallery-wrapper {
-  padding-top: 40em;
+  padding-top: 640px;
 }
 
 #gallery-wrapper .row {
@@ -291,7 +289,7 @@ label {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   border-bottom: 0.05em solid #0A4EF2/*black*/;
-  background-color: #f0d8dd;
+  background-color: #f0c9d1;
 }
 
 .thumbnail {
