@@ -58,10 +58,11 @@ $(".outer").click(function() {
 })
 
 function resizeHeader() {
-  var windowHeight = $(window).height();
-  $(".header").css('height', windowHeight + 'px');
-  $("#video-gallery").css('margin-top', windowHeight + 'px');
-  $("#gallery-wrapper").css('padding-top', (windowHeight * 0.67) + 'px');
+  var headerHeight = Math.max($(window).height(), ($('#text-head-col').offset().top + $('#text-head-col').outerHeight(true)));
+  var galleryElem = Math.min($(window).height(), $(window).width())
+  $(".header").css('height', headerHeight + 'px');
+  $("#video-gallery").css('margin-top', headerHeight + 'px');
+  $("#gallery-wrapper").css('padding-top', (galleryElem * 0.4) + 'px');
 }
 
 function loadContent(contentID) {
@@ -81,15 +82,29 @@ function closeTheater() {
   document.getElementById("theater").style.display = "none";
 }
 
+var breakpoint;
+var displayProp = 'inline';
+var offScreen = false;
 
 function parallax() {
 	var wScroll = $(window).scrollTop();
   var topGallery = $('#video-gallery').offset().top;
-  console.log(wScroll + ", " + topGallery);
 	$('.down-indicator').css('opacity', (100 - (wScroll)) + '%');
 	$('.parallax-bg').css('background-position', 'center ' + (5 + (wScroll * 0.063)) + 'em');
   if (wScroll >= topGallery) {
-    $('.parallax-bg-gallery').css('background-position', 'center ' + (5 + ((wScroll - topGallery) * 0.1)) + 'em');
+    $('.parallax-gallery').css('top', (80 + (wScroll - topGallery) * 1.4) + 'px');
+    console.log($('.parallax-gallery').offset().top >= wScroll + $(window).height());
+    if ($('.parallax-gallery').offset().top >= wScroll + $(window).height() && offScreen == false) {
+      breakpoint = $('.parallax-gallery').offset().top;
+      offScreen = true;
+    }
+    if (offScreen) {
+      displayProp = 'none';
+      if (wScroll + $(window).height() <= breakpoint) {
+        displayProp = 'inline';
+      }
+    }
+    $('.parallax-gallery').css('display', displayProp);
   }
 }
 
