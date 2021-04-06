@@ -42,6 +42,7 @@ $(".video-box").hover(
     $(videoSelector).css('width', imgWidth + 'px');
     $(imgSelector).css('display', 'none');
     $(videoSelector).css('display', 'block');
+    loadContent(this.id);
   }, function() {
     var id = this.id;
     $("#" + id + " video").css('display', 'none');
@@ -50,7 +51,6 @@ $(".video-box").hover(
 );
 
 $(".video-box").click(function() {
-  loadContent(this.id);
   openTheater();
 });
 
