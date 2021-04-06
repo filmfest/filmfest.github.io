@@ -65,6 +65,10 @@ body {
   height: auto;
 }
 
+.overflow-header {
+  overflow-y: auto;
+}
+
 .text-head {
   box-shadow: -2px 0px 0 #0A4EF2;
   /* border-left: 0.1em solid #0A4EF2; */
@@ -77,19 +81,19 @@ body {
 .text-head .event-title {
   color: #0A4EF2;
   font-weight: 600;
-  font-size: 2.5em;
+  font-size: 2.5vw;
 }
 
 .text-head .time-date {
   color: #0A4EF2;
   font-weight: 400;
-  font-size: 2em;
+  font-size: 2vw;
 }
 
 .text-head .event-description {
   color: #0A4EF2;
   font-weight: 200;
-  font-size: 1.5em;
+  font-size: 1.5vw;
 }
 
 #head.spacer {
@@ -112,11 +116,11 @@ body {
 }
 
 .down-indicator {
-	width: 1.25em;
+	width: 1.25vw;
 	height: auto;
   animation: bobble 1s infinite alternate;
 	opacity: 100%;
-  transition: initial;
+  transition: none;
   color: #0A4EF2/*black*/;
 }
 
@@ -239,11 +243,26 @@ label {
 
 .bg-logo {
   position: absolute;
-  transform: rotate(0.65turn);
-  top: 600px;
   z-index: 9;
   opacity: 20%;
 }
+
+.bg-logo.one {
+  transform: rotate(0.65turn);
+  top: 600px;
+}
+
+.bg-logo.two {
+  transform: rotate(1.3turn);
+  top: 3000px;
+}
+
+.bg-logo.three {
+  transform: rotate(3.1turn);
+  bottom: -400px;
+  left: 500px;
+}
+
 
 #video-gallery {
   position: relative;
@@ -368,6 +387,6 @@ button:active{
 button p {
   margin-bottom: 0;
   color: white;
-  font-size: 1.5em;
+  font-size: 1.5vw;
   font-weight: 600;
 }
