@@ -322,7 +322,6 @@ label {
 }
 
 .thumbnail {
-	height: 400px;
 	width: auto;
   transition: all .2s ease-in-out;
 }
