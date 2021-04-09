@@ -71,8 +71,14 @@ function checkBorder() {
   var headerWidth = $(window).width();
   if (headerWidth < 992) {
     $(".text-head").css('box-shadow', '0px 0px 0 #0A4EF2');
+    $(".text-head").css('padding-right', '50px');
+    $(".img-col").css('margin', 'none');
+    $(".img-col").css('margin-right', 'auto');
   } else {
     $(".text-head").css('box-shadow', '-2px 0px 0 #0A4EF2');
+    $(".text-head").css('padding-right', '200px');
+    $(".img-col").css('margin', 'auto');
+    $(".img-col").css('margin-right', '0px');
   }
 }
 

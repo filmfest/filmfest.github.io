@@ -76,28 +76,29 @@ body {
   margin-top: 25px;
   padding-top: 50px;
   padding-left: 50px;
+  padding-right: 200px;
 }
 
 .text-head .event-title {
   color: #0A4EF2;
   font-weight: 600;
-  font-size: 2.5vw;
+  font-size: 2.5vmax;
 }
 
 .text-head .time-date {
   color: #0A4EF2;
   font-weight: 400;
-  font-size: 2vw;
+  font-size: 2vmax;
 }
 
 .text-head .event-description {
   color: #0A4EF2;
   font-weight: 200;
-  font-size: 1.5vw;
+  font-size: 1.5vmax;
 }
 
 #head.spacer {
-	height: 50em;
+	height: 50vmax;
 }
 
 .icons img {
@@ -116,7 +117,7 @@ body {
 }
 
 .down-indicator {
-	width: 1.25vw;
+	width: 1.25em;
 	height: auto;
   animation: bobble 1s infinite alternate;
 	opacity: 100%;
@@ -334,7 +335,7 @@ label {
 .parallax-gallery {
   color: #0A4EF2;
   font-weight: 100;
-  font-size: 8vw;
+  font-size: 8em;
   z-index: 10;
   position: absolute;
   top: 80px;
@@ -354,7 +355,7 @@ button {
   outline: none !important;
   background: #4678f3;
   border:none;
-  padding:1em 2em;
+  padding:1vmax 2vmax;
   transition:all .3s ease-out;
   box-shadow:inset 0px -8px 0 0 #0A4EF2,
     1px 1px 0 0 #d1abb3,
@@ -386,6 +387,6 @@ button:active{
 button p {
   margin-bottom: 0;
   color: white;
-  font-size: 1.5vw;
+  font-size: 1.5em;
   font-weight: 600;
 }
