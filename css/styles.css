@@ -285,12 +285,6 @@ label {
   overflow: hidden;
 }
 
-.gallery-title {
-  font-weight: 300;
-  font-size: 12vw;
-  color: #0A4EF2/*black*/;
-}
-
 .gallery-head {
   position: sticky;
   position: -webkit-sticky;
@@ -335,7 +329,7 @@ label {
 .parallax-gallery {
   color: #0A4EF2;
   font-weight: 100;
-  font-size: 8em;
+  font-size: 9vmax;
   z-index: 10;
   position: absolute;
   top: 80px;
